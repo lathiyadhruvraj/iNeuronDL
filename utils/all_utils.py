@@ -9,9 +9,7 @@ plt.style.use('fivethirtyeight')
 
 def prepare_data(df):
   X = df.drop("y", axis=1)
-
-  y = df['y']
-
+  y = df["y"]
   return X, y
 
 def save_model(model, filename):
@@ -49,7 +47,6 @@ def save_plot(df, file_name, model):
     plt.ylim(xx2.min(), xx2.max())
 
     plt.plot()
-
 
 
   X, y = prepare_data(df)
